@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Signup_Activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Register for new user"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="646dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="516dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textViewAppTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:text="Signup Now"
+                        android:textColor="@color/green"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:textColorHint="@color/textcolor">
+
+                        <EditText
+                            android:id="@+id/editTextTextRegUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/input_bg"
+                            android:backgroundTint="@color/lightgrey"
+                            android:ems="10"
+                            android:hint="Enter Name"
+                            android:inputType="textPersonName"
+                            android:paddingStart="5dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/textcolor"
+                            tools:ignore="Autofill" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/textcolor">
+
+                        <EditText
+                            android:id="@+id/editTextTextPhoneNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/input_bg"
+                            android:backgroundTint="@color/lightgrey"
+                            android:ems="10"
+                            android:hint="Phone Number"
+                            android:inputType="phone"
+                            android:paddingStart="5dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/textcolor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/textcolor"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxBackgroundMode="outline"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@color/textcolor">
+
+                        <EditText
+                            android:id="@+id/editTextTextRegPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/input_bg"
+                            android:backgroundTint="@color/lightgrey"
+                            android:ems="10"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:paddingStart="5dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/textcolor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/textcolor"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxBackgroundMode="outline"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@color/textcolor">
+
+                        <EditText
+                            android:id="@+id/editTextTextRegConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/input_bg"
+                            android:backgroundTint="@color/lightgrey"
+                            android:ems="10"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:paddingStart="5dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/textcolor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/textcolor">
+
+                        <EditText
+                            android:id="@+id/editTextTextGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/input_bg"
+                            android:backgroundTint="@color/lightgrey"
+                            android:ems="10"
+                            android:hint="Gender"
+                            android:inputType="text"
+                            android:paddingStart="5dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/textcolor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/textcolor">
+
+                        <EditText
+                            android:id="@+id/editTextTextCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/input_bg"
+                            android:backgroundTint="@color/lightgrey"
+                            android:ems="10"
+                            android:hint="Enter City"
+                            android:inputType="text"
+                            android:paddingStart="5dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/textcolor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonReg"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg"
+                    android:layout_marginStart="45dp"
+                    android:text="Submit Now"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CreateGroup_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="708dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorRed"
+            android:paddingStart="5dp"
+            android:text="Create New Group"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/textcolor">
+
+                <EditText
+                    android:id="@+id/editTextTextGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/lightgrey"
+                    android:ems="10"
+                    android:hint="Enter Group Name"
+                    android:textSize="20sp"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textcolor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Contacts Numbers "
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_Red"
+    tools:context=".Fragments.Chat_Fragment">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:padding="5dp"
+     android:orientation="vertical">
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="600dp"
+         android:layout_above="@+id/linear"/>
+
+     <LinearLayout
+         android:id="@+id/linear"
+         android:layout_width="344dp"
+         android:layout_height="55dp"
+         android:layout_marginEnd="20dp"
+         android:orientation="horizontal">
+
+         <EditText
+             android:layout_width="270dp"
+             android:layout_height="match_parent"
+             android:background="@drawable/input_bg"
+             android:hint="Type a Message"
+             android:textColor="@color/black"
+             android:textColorHint="@color/black" />
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/group_profile_image"
+             android:layout_width="74dp"
+             android:layout_height="55dp"
+             android:padding="5dp"
+             android:src="@drawable/baseline_send_24"
+             app:civ_border_color="@color/black"
+             app:civ_border_width="2dp"
+             app:civ_circle_background_color="@color/colorRed" />
+
+     </LinearLayout>
+
+ </LinearLayout>
+
+</FrameLayout>

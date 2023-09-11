@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+  <group android:checkableBehavior="single">
+
+      <item
+          android:id="@+id/dashboard"
+          android:title="Dashboard"
+          android:iconTint="@color/white"
+          android:icon="@drawable/baseline_home_24"/>
+
+
+      <item
+          android:id="@+id/profile"
+          android:title="Profile"
+          android:iconTint="@color/white"
+          android:icon="@drawable/baseline_person_24"/>
+
+      <item
+          android:id="@+id/journey"
+          android:title="Journey"
+          android:iconTint="@color/white"
+          android:icon="@drawable/baseline_directions_car_24"
+          />
+
+
+  </group>
+
+    <item android:title="Other">
+
+        <menu>
+
+            <item
+                android:id="@+id/share"
+                android:title="Share"
+                android:iconTint="@color/white"
+                android:icon="@drawable/baseline_share_24"
+                />
+
+            <item
+                android:id="@+id/logOut"
+                android:title="Logout"
+                android:iconTint="@color/white"
+                android:icon="@drawable/baseline_logout_24"
+                />
+
+        </menu>
+
+    </item>
+
+
+
+
+</menu>
